@@ -1,0 +1,190 @@
+{
+  "id": "69f0e618-761c-454e-8383-30333fb8f699",
+  "startTime": "2021-10-14T16:51:57+02:00",
+  "name": "rqapi",
+  "key": "RQAPI",
+  "env": "http://localhost:9999",
+  "duration": null,
+  "durationFormat": "Invalid date",
+  "timestamp": "2021-10-14T16:51:57+02:00",
+  "type": "testSuite",
+  "total": 1,
+  "success": false,
+  "passed": 0,
+  "failed": 1,
+  "skipped": 0,
+  "scenarios": {
+    "passed": 0,
+    "failed": 1,
+    "skipped": 0,
+    "undefined": 0
+  },
+  "features": [
+    {
+      "description": "",
+      "elements": [
+        {
+          "description": "",
+          "id": "hello;scenario-all-good",
+          "keyword": "Scenario",
+          "line": 2,
+          "name": "Scenario all good",
+          "steps": [
+            {
+              "keyword": "Before",
+              "hidden": true,
+              "result": {
+                "status": "passed",
+                "duration": 0
+              }
+            },
+            {
+              "keyword": "Before",
+              "hidden": true,
+              "result": {
+                "status": "passed",
+                "duration": 0
+              }
+            },
+            {
+              "arguments": [],
+              "keyword": "Given ",
+              "line": 3,
+              "name": "I have the api gateway",
+              "match": {
+                "location": "../../plugin/index.js:189"
+              },
+              "result": {
+                "status": "passed",
+                "duration": 1000000
+              }
+            },
+            {
+              "arguments": [],
+              "keyword": "And ",
+              "line": 4,
+              "name": "I have the path \"/hello\"",
+              "match": {
+                "location": "../../plugin/index.js:189"
+              },
+              "result": {
+                "status": "passed",
+                "duration": 0
+              }
+            },
+            {
+              "arguments": [],
+              "keyword": "And ",
+              "line": 5,
+              "name": "I have the method \"GET\"",
+              "match": {
+                "location": "../../plugin/index.js:189"
+              },
+              "result": {
+                "status": "passed",
+                "duration": 1000000
+              }
+            },
+            {
+              "arguments": [],
+              "keyword": "When ",
+              "line": 6,
+              "name": "I run the API",
+              "match": {
+                "location": "../../plugin/index.js:189"
+              },
+              "result": {
+                "status": "failed",
+                "duration": 386000000,
+                "error_message": "GotError: certificate has expired\n    at onError (/Users/tonygorez/projects/rqapi/node_modules/got/dist/source/request-as-event-emitter.js:140:29)\n    at handleRequest (/Users/tonygorez/projects/rqapi/node_modules/got/dist/source/request-as-event-emitter.js:173:17)\n    at processTicksAndRejections (node:internal/process/task_queues:96:5)\n    at TLSSocket.onConnectSecure (node:_tls_wrap:1530:34)\n    at TLSSocket.emit (node:events:390:28)\n    at TLSSocket._finishInit (node:_tls_wrap:944:8)\n    at TLSWrap.ssl.onhandshakedone (node:_tls_wrap:725:12)"
+              }
+            },
+            {
+              "arguments": [],
+              "keyword": "Then ",
+              "line": 7,
+              "name": "I should receive a response with the status 200",
+              "match": {
+                "location": "../../plugin/index.js:189"
+              },
+              "result": {
+                "status": "skipped",
+                "duration": 0
+              }
+            },
+            {
+              "arguments": [],
+              "keyword": "And ",
+              "line": 8,
+              "name": "the response body at \"value\" should equal \"world\"",
+              "match": {
+                "location": "../../plugin/index.js:189"
+              },
+              "result": {
+                "status": "skipped",
+                "duration": 0
+              }
+            },
+            {
+              "keyword": "After",
+              "hidden": true,
+              "result": {
+                "status": "passed",
+                "duration": 0
+              },
+              "embeddings": [
+                {
+                  "data": "{\"apis\":[{\"curl\":\"curl -X GET --url https://api.restqa.io/hello\",\"request\":{\"hostname\":\"api.restqa.io\",\"port\":\"\",\"protocol\":\"https:\",\"pathname\":\"/hello\",\"hooks\":{\"afterResponse\":[null]},\"method\":\"get\",\"headers\":{\"x-correlation-id\":\"test-e2e-get-721-1634223117199\",\"user-agent\":\"restqa (https://github.com/restqa/restqa)\"},\"responseType\":\"json\"},\"response\":null,\"error\":\"certificate has expired\"}]}",
+                  "mime_type": "application/json"
+                }
+              ]
+            }
+          ],
+          "tags": [],
+          "type": "scenario",
+          "step_passed": 6,
+          "step_failed": 1,
+          "step_skipped": 2,
+          "step_undefined": 0,
+          "result": false,
+          "status": "failed",
+          "duration": 0.388,
+          "timestamp": "2021-10-14T16:51:57+02:00",
+          "metadata": {
+            "id": "69f0e618-761c-454e-8383-30333fb8f699",
+            "startTime": "2021-10-14T16:51:57+02:00",
+            "name": "rqapi",
+            "key": "RQAPI",
+            "env": "http://localhost:9999",
+            "duration": null,
+            "durationFormat": "Invalid date"
+          }
+        }
+      ],
+      "id": "hello",
+      "line": 1,
+      "keyword": "Feature",
+      "tags": [],
+      "uri": "../../../../tests/integration/hello.feature",
+      "total": 1,
+      "passed": 0,
+      "failed": 1,
+      "skipped": 0,
+      "undefined": 0,
+      "result": false,
+      "duration": 0.388,
+      "timestamp": "2021-10-14T16:51:57+02:00",
+      "type": "feature",
+      "feature_name": "Hello",
+      "metadata": {
+        "id": "69f0e618-761c-454e-8383-30333fb8f699",
+        "startTime": "2021-10-14T16:51:57+02:00",
+        "name": "rqapi",
+        "key": "RQAPI",
+        "env": "http://localhost:9999",
+        "duration": null,
+        "durationFormat": "Invalid date"
+      }
+    }
+  ]
+}

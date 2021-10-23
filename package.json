@@ -1,0 +1,17 @@
+{
+  "name": "rqapi",
+  "version": "1.0.0",
+  "description": "Test repository for RestQA",
+  "main": "index.js",
+  "scripts": {
+    "start:express": "node express-server.js",
+    "test": "restqa run . -x 'npm run start:express'"
+  },
+  "keywords": ["e2e testing", "test automation", "gherkin", "api"],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@restqa/restqa": "0.0.34",
+    "express": "^4.17.1"
+  }
+}
