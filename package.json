@@ -6,7 +6,8 @@
   "scripts": {
     "start:express": "node express-server.js",
     "start:fastify": "node fastify-server.js",
-    "test": "restqa run . -x 'npm run start:fastify'"
+    "test": "restqa run . -x 'npm run start:fastify'",
+    "test:dashboard": "restqa dashboard"
   },
   "keywords": [
     "e2e testing",
@@ -17,8 +18,12 @@
   "author": "",
   "license": "MIT",
   "dependencies": {
-    "@restqa/restqa": "0.0.34",
+    "@restqa/restqa": "0.0.36-rc.1",
     "express": "^4.17.1",
-    "fastify": "^3.22.1"
+    "fastify": "^3.22.1",
+    "got": "^11.8.2"
+  },
+  "devDependencies": {
+    "@restqa/http-mock-plugin": "^0.0.2"
   }
 }
