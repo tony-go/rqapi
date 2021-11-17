@@ -1,5 +1,5 @@
 request:
-  url: /todos/:id
+  url: /todos/1
   method: GET
 response:
   status: 200
